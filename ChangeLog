@@ -1,3 +1,6 @@
+libdvdnav (7.0.1)
+ * add symbol visibility attributes on OS/2
+
 libdvdnav (7.0.0)
  * add dvdnav_get_volid_string to obtain the volume id of the disc
  * add dvdnav_get_number_of_streams API to list tracks
@@ -6,10 +9,16 @@ libdvdnav (7.0.0)
  * add dvdnav_get_disk_region_mask API to get the reported version from the disk
  * expose dvdnav_jump_to_sector_by_time to the API
  * switch build system to Meson (and remove autotools)
+ * remove obsolete MSVC files
+ * fix public dvdnav.h includes
+ * fix undefined shifts and add extra navigation safeguards
+ * update CI targets, including wasm and newer platform images
  * fix crashes and avoid asserts
 
 libdvdnav (6.1.1)
  * fix build issues
+ * fix build with LOG_DEBUG enabled
+ * require C99 in autotools
  * improve CI
 
 libdvdnav (6.1.0)
@@ -18,6 +27,7 @@ libdvdnav (6.1.0)
  * add a dvdnav_version API
  * rework the logs in the library and remove direct printf calls
  * handle out-of-order ADMAP entries blocking playback
+ * harden title search against invalid title numbers
  * fix crashes in dvdnav_describe_title_chapters in broken DVDs
  * cleanup old code and buildsystem
 
