@@ -12,7 +12,7 @@ build-debian:
         - amd64
     script:
         - git clone --branch master --depth 1 https://code.videolan.org/videolan/libdvdread.git subprojects/libdvdread
-        - meson setup build -Dwarning_level=3
+        - meson setup build -Dwarning_level=3 -Dextra_checks=true
         - meson compile -C build
 
 build-raspberry:
@@ -47,7 +47,7 @@ build-macos-warm:
         - macos-xcode26
     script:
         - git clone --branch master --depth 1 https://code.videolan.org/videolan/libdvdread.git subprojects/libdvdread
-        - meson setup build -Dwarning_level=2
+        - meson setup build -Dwarning_level=2 -Dextra_checks=true
         - meson compile -C build
 
 build-win:
@@ -58,7 +58,7 @@ build-win:
         - amd64
     script:
         - git clone --branch master --depth 1 https://code.videolan.org/videolan/libdvdread.git subprojects/libdvdread
-        - meson setup build -Dwarning_level=2 --cross-file package/crossfiles/${CROSSFILE}.meson
+        - meson setup build -Dwarning_level=2 -Dextra_checks=true --cross-file package/crossfiles/${CROSSFILE}.meson
         - meson compile -C build
     parallel:
         matrix:
@@ -73,7 +73,7 @@ build-win-arm:
         - amd64
     script:
         - git clone --branch master --depth 1 https://code.videolan.org/videolan/libdvdread.git subprojects/libdvdread
-        - meson setup build -Dwarning_level=2 --cross-file package/crossfiles/${CROSSFILE}.meson
+        - meson setup build -Dwarning_level=2 -Dextra_checks=true --cross-file package/crossfiles/${CROSSFILE}.meson
         - meson compile -C build
     parallel:
         matrix:
