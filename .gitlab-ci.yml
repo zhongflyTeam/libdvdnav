@@ -80,7 +80,7 @@ build-win-arm:
             - CROSSFILE: [armv7-w64-mingw32, aarch64-w64-mingw32]
 
 build-wasm:
-    image: registry.videolan.org/vlc-debian-wasm-emscripten:20250905104736
+    image: registry.videolan.org/vlc-debian-wasm-emscripten:20260617104340
     stage: build
     tags:
         - docker
