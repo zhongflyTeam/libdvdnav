@@ -22,6 +22,9 @@
 #include "config.h"
 #endif
 
+#include <dvdread/nav_types.h>
+#include "dvdnav/dvdnav.h"
+
 #include <assert.h>
 #include <inttypes.h>
 #include <stdlib.h>
@@ -29,8 +32,6 @@
 #include <limits.h>
 #include <string.h>
 #include <sys/time.h>
-#include <dvdread/nav_types.h>
-#include "dvdnav/dvdnav.h"
 #include "vm/decoder.h"
 #include "vm/vm.h"
 #include "vm/vmcmd.h"

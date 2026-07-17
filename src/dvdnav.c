@@ -28,6 +28,10 @@
 #define LOG_DEBUG
 */
 
+#include "dvdnav/dvdnav.h"
+#include <dvdread/dvd_reader.h>
+#include <dvdread/nav_types.h>
+
 #include <inttypes.h>
 #include <stdlib.h>
 #include <stdio.h>
@@ -35,9 +39,6 @@
 #include <limits.h>
 #include <string.h>
 #include <sys/time.h>
-#include "dvdnav/dvdnav.h"
-#include <dvdread/dvd_reader.h>
-#include <dvdread/nav_types.h>
 #include "vm/decoder.h"
 #include "vm/vm.h"
 #include "vm/getset.h"

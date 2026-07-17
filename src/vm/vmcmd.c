@@ -24,14 +24,15 @@
 #include "config.h"
 #endif
 
+#include "dvdnav/dvdnav.h"
+#include <dvdread/nav_types.h>
+
 #include <stdio.h>
 #include <ctype.h>
 #include <inttypes.h>
 #include <limits.h>
 #include <sys/time.h>
 
-#include "dvdnav/dvdnav.h"
-#include <dvdread/nav_types.h>
 #include "decoder.h"
 #include "vm.h"
 #include "vmcmd.h"

@@ -24,6 +24,8 @@
 #include "config.h"
 #endif
 
+#include <dvdread/nav_types.h>
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <inttypes.h>
@@ -31,8 +33,6 @@
 #include <string.h>  /* For memset */
 #include <sys/time.h>
 #include <assert.h>
-
-#include <dvdread/nav_types.h>
 
 #include "dvdnav/dvdnav.h"
 #include "decoder.h"

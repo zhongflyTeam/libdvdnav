@@ -25,15 +25,15 @@
 #include "config.h"
 #endif
 
+#include <dvdread/nav_types.h>
+#include <dvdread/ifo_read.h>
+#include "dvdnav/dvdnav.h"
+
 #include <assert.h>
 #include <inttypes.h>
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
-
-#include <dvdread/nav_types.h>
-#include <dvdread/ifo_read.h>
-#include "dvdnav/dvdnav.h"
 
 #include "decoder.h"
 #include "vm.h"

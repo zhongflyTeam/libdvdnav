@@ -25,6 +25,10 @@
 #include "config.h"
 #endif
 
+#include <dvdread/nav_types.h>
+#include <dvdread/ifo_read.h>
+#include "dvdnav/dvdnav.h"
+
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
@@ -37,10 +41,6 @@
 #include <sys/time.h>
 #include <fcntl.h>
 #include <ctype.h>
-
-#include <dvdread/nav_types.h>
-#include <dvdread/ifo_read.h>
-#include "dvdnav/dvdnav.h"
 
 #include "decoder.h"
 #include "vm.h"
