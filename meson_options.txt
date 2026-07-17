@@ -12,3 +12,8 @@ option('enable_examples',
     type: 'boolean',
     value: false,
     description: 'Build libdvdnav examples')
+
+option('extra_checks',
+    type : 'boolean',
+    value : false,
+    description : 'Turn some warnings into compilation error')

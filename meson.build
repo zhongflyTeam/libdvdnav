@@ -113,6 +113,22 @@ if cc.get_argument_syntax() != 'msvc'
         '-Wshadow=local',
         '-Wmultistatement-macros',
     ]
+
+    if get_option('extra_checks')
+        optional_arguments += [
+            '-Werror-implicit-function-declaration',
+            '-Werror=missing-field-initializers',
+            '-Werror=format',
+            '-Werror=return-mismatch',
+            '-Werror=incompatible-pointer-types',
+            '-Werror=restrict',
+            '-Werror=int-conversion',
+            '-Werror=implicit-int',
+            '-Werror=declaration-missing-parameter-type',
+            '-Werror=excess-initializers',
+            '-Werror=unterminated-string-initialization',
+        ]
+    endif
 endif
 
 add_project_arguments(cc.get_supported_arguments(optional_arguments), language: 'c')
