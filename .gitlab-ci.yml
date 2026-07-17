@@ -12,7 +12,7 @@ build-debian:
         - amd64
     script:
         - git clone --branch master --depth 1 https://code.videolan.org/videolan/libdvdread.git subprojects/libdvdread
-        - meson setup build -Dwarning_level=2
+        - meson setup build -Dwarning_level=3
         - meson compile -C build
 
 build-raspberry:
