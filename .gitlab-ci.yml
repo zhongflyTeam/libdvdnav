@@ -66,7 +66,7 @@ build-win:
 
 
 build-win-arm:
-    image: registry.videolan.org/vlc-debian-llvm-msvcrt:20250305204125
+    image: registry.videolan.org/vlc-debian-llvm-ucrt:20260611225331
     stage: build
     tags:
         - docker
