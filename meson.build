@@ -98,6 +98,20 @@ if cc.get_argument_syntax() != 'msvc'
     optional_arguments += [
         '-mno-ms-bitfields',
         '-Wsign-compare',
+        '-Wundef',
+        '-Wpointer-arith',
+        '-Wvolatile-register-var',
+        '-Wformat',
+        '-Wformat-security',
+        '-Wduplicated-branches',
+        '-Wduplicated-cond',
+        '-Wbad-function-cast',
+        '-Wwrite-strings',
+        '-Wmissing-prototypes',
+        '-Winit-self',
+        '-Wlogical-op',
+        '-Wshadow=local',
+        '-Wmultistatement-macros',
     ]
 endif
 
